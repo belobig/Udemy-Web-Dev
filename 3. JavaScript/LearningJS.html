@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+    <title>Learning JavaScript</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<style type="text/css">
+		#redCircle {
+			width:100px;
+			height:100px;
+			float:left;
+			margin:20px;
+			background-color:red;
+			border-radius:50px;
+		}
+	</style>
+</head>
+
+<body>
+	<button onclick="alert('Hi, you farty jerk!')">Click Me, Dang it!</button>
+	<button id="tempterButton">Don't you dare click this...</button>
+	<button id="textChanger">Change first div text</button>
+	<input id="myInput" type="text" placeholder="I like poo" />
+	<button id="stylesChanger">Change the text!</button>
+	<button id="pooChanger">Change it again!</button>
+	<div id="firstDiv">This is some text</div>
+	
+	<button id="textAppender">Additional crappy text.</button>
+	<div id="secondDiv">JavaScript is...</div>
+	
+	<button id="textCreator">Create some text</button>
+	<div id="emptyDiv"></div>
+	
+	<p id="text">Plain ol boring text</p>
+	
+	<div id="redCircle"></div>
+	
+	
+	
+	<script type="text/javascript">
+		var newText=document.getElementById("myInput").value;
+		var myArray=new Array();
+		myArray[0]="pizza";
+		myArray[1]="chocolate";
+		myArray[2]="crap";
+		
+		console.log(myArray);
+		
+		myOtherArray=["crud","noodles","cat fur"];
+		
+		myOtherArray.push("snow");
+		
+		myOtherArray.splice(2, 0, "hail", "cloudy brown");
+		
+		console.log(myOtherArray.length);
+		
+		alert("Page pants loaded... Ewwww...");
+		//This is a comment
+		/*
+		This is a Multi-line
+		Comment
+		
+		
+		*/
+		document.getElementById("text").innerHTML="CRAP! Just get me outta here!!!";
+		document.getElementById("tempterButton").onclick=function() {
+			alert("Oh great, now you've gone and done it. Congratulations. You broke the internet.");
+		}
+		
+		document.getElementById("textChanger").onclick=function() {
+			document.getElementById("firstDiv").innerHTML="Holy Crap, MORE TEXT!!!!";
+		}
+		
+		document.getElementById("textAppender").onclick=function() {
+			document.getElementById("secondDiv").innerHTML=document.getElementById("secondDiv").innerHTML + "great!";
+		}
+		
+		document.getElementById("textCreator").onclick=function() {
+			document.getElementById("emptyDiv").innerHTML="Would you stop that already!!!!<ul><li>Crap</li><li>Poop</li><li>Stink</li><li>Grunt</li><li>Ugh</li></ul>";
+		}
+		
+		document.getElementById("redCircle").onclick=function() {
+			document.getElementById("redCircle").style.display="none";
+		}
+		
+		document.getElementById("stylesChanger").onclick=function() {
+			newText=document.getElementById("myInput").value;
+			document.getElementById("firstDiv").innerHTML=newText;
+		}
+		
+		document.getElementById("pooChanger").onclick=function() {
+			document.getElementById("firstDiv").innerHTML=myArray[2];
+		}
+	</script>
+</body>
+</html>
