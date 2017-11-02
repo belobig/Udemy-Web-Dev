@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML5 Other Features</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    
+	<script>document.createElement("container");</script> <!-- Create your own elements! -->
+	
+	<style>
+		html {
+			background-color:black;
+		}
+		article {
+			color: green;
+		}
+		header, footer, article, section, nav, menu {
+			display: block; <!-- Used to display correctly in Internet Exploder -->
+		}
+		container {
+			color: cyan;
+		}
+		figcaption {
+			color: white;
+			font-family: arial;
+		}
+		div {
+			color:red;
+		}
+		ul {
+			color: purple;
+		}
+	</style>
+  </head>
+
+  <body>
+	<article>
+		Holy guacamole, I'm an article!
+	</article>
+	
+	<container>
+		I'm a container! Aww snap!
+	</container>
+	
+	<figure>
+		<img data-description="R2-D2" id="droid" src="https://milnersblog.files.wordpress.com/2015/09/r2-d2-star-wars-ep7-the-force-awakens-characters-cut-out-with-transparent-background_24.png" alt="R2-D2">
+		<figcaption>
+			<p>R2-D2 <small>(Milnersblog.com)</small></p>
+			<p><mark>Ain't none better</mark></p>
+		</figcaption>
+	</figure>
+	
+	<input type="range" min="0" max="100" step="10">
+	
+	<div contenteditable="true">
+		This is some boring sample text... but you can change it!
+	</div>
+	
+	<ul contenteditable="true">
+		<li>Soccer Practice</li>
+		<li>Kiss Wife</li>
+		<li>Learn more webdev</li>
+		<li>Conquer the world</li>
+	</ul>
+	
+	<script>
+		//alert(document.getElementById("droid").getAttribute("data-description"));
+	</script>
+	
+  </body>
+</html>
