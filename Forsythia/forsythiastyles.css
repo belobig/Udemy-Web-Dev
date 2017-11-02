@@ -1,0 +1,62 @@
+	h1 {
+		font-family: Harrington, "High Tower Text", serif;
+		font-size:2em;
+	}
+	body {
+		margin:20px;
+		background-image:url("images/ForsythiaTitleCover.png");
+		background-repeat:no-repeat;
+		background-position:center top;
+		background-color:#87D0F1;
+		background-attachment:fixed;
+		font-family:Arial, Helvetica, sans-serif;
+	}
+	#topbar {
+		float:left;
+	}
+	#topbar ul {
+		margin:0;
+		padding:0;
+	}
+	#topbar li {
+		list-style:none;
+		font-weight:bold;
+		font-size:0.9em;
+		border-right:2px solid #F5ED26;
+		height:100%;
+		padding:13px 16px 11px 16px;
+		float:left;
+	}
+	.fixedwidth {
+		width:600px;
+		margin:0 auto;
+	}
+	.selected {
+		text-decoration:underline;
+	}
+	a {
+		color:black;
+		text-decoration:none;
+	}
+	a:hover {
+		color:#1167A8;
+	}
+	.break {
+		clear:both;
+	}
+	.infobox {
+		width:600px;
+		height:300px;
+		background: rgba(255,255,255,0.8);
+		-pie-background: rgba(255,255,255,0.8);
+		behavior: url(PIE.htc);
+		position:relative;
+		top:150px;
+	}
+	.infobox p {
+		float:left;
+		width:300px;
+		font-family: Harrington, "High Tower Text", serif;
+		font-weight:bold;
+		font-size: 1.2em;
+	}
