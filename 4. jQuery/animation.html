@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+    <title>Learning jQuery - Animation</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<style type="text/css">
+		.redsquare {
+			width:300px;
+			height:300px;
+			margin:20px;
+			background-color:red;
+			position:relative;
+		}
+		#greencircle {
+			width:100px;
+			height:100px;
+			margin:20px;
+			background-color:green;
+			position:relative;
+			border-radius:50px;
+		}
+	</style>
+	<script type="text/javascript" src="jquery.min.js"></script> <!-- This is version 1.11.3, which is best for older browser versions, especially of IE.
+		Or, to use the latest version of jQuery,
+		you can change src to "http://code.jquery.com/jquery-latest.min.js"
+		This may also be a faster method if the user has already been to a site that uses this version.
+		Using a locally stored version makes it so the user's browser has to download your copy of jquery when they visit your site,
+		but this way you can ensure they use a specific version. -->
+</head>
+
+<body>
+
+	<div id="greencircle"></div>
+	<script>
+		
+		$("#greencircle").click(function() {
+			$(this).animate({
+				width:"300px",
+				height:"300px",
+				borderRadius:"150px",
+				marginLeft:"100px",
+				marginTop:"100px"
+				},800);
+		});
+	</script>
+</body>
+</html>

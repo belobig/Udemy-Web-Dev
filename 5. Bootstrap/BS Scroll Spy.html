@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>BS-ScrollSpy</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<style>
+		.box {
+			border:1px solid grey;
+			background-color:#d3d3d3;
+		}
+		.large {
+			font-size:400%
+		}
+		.red {
+			color:red;
+		}
+		.blue {
+			color:blue;
+		}
+		.green {
+			color:green;
+		}
+		.yellowbg {
+			background-color:yellow;
+		}
+		#div1 {
+			background-color:blue;
+		}
+		#div2 {
+			background-color:red;
+		}
+		#div3 {
+			background-color:green;
+		}
+		.contentDiv {
+			height:800px;
+		}
+		h1 {
+			padding-top:50px;
+		}
+	</style>
+  </head>
+  <body data-spy="scroll" data-target=".navbar-collapse"> <!-- This is needed for scroll spy. Data-target is name of class you want to spy -->
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="" class="navbar-brand">Sick Logo</a>
+				
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			
+			<div class="collapse navbar-collapse"> <!-- This is the class being spied -->
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#div1">Page 1</a></li>
+					<li><a href="#div2">Page 2</a></li>
+					<li><a href="#div3">Page 3</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+    
+	
+	<div class="container">
+	<h1>Hello, world!</h1>
+		<div id="div1" class="contentDiv">This is the first div.</div>
+		<div id="div2" class="contentDiv">This is the second div.</div>
+		<div id="div3" class="contentDiv">This is the third div.</div>
+	
+	</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

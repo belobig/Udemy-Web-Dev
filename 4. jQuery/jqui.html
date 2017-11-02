@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+    <title>Learning jQuery - UI</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<style type="text/css">
+		#draggable {
+			height: 362px;
+			width: 362px;
+			background-color: green;
+		}
+		#resizable {
+			height: 362px;
+			width: 362px;
+			background-color:blue;
+		}
+		#target {
+			height: 400px;
+			width: 400px;
+			background-color:orange;
+		}
+		
+	</style>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script> 
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+</head>
+
+<body>
+	<div id="accordion">
+		<h3>The Jquery UI Demo Page</h3>
+		<div>
+			<p>Demo text for demo purposes. 
+			Demo text for demo purposes. 
+			Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. 
+			Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. 
+			Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. </p>
+		</div>
+		<h3>The Jquery UI Demo Page</h3>
+		<div>
+			<p>Demo text for demo purposes. 
+			Demo text for demo purposes. 
+			Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. 
+			Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. 
+			Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. </p>
+		</div>
+		<h3>The Jquery UI Demo Page</h3>
+		<div>
+			<p>Demo text for demo purposes. 
+			Demo text for demo purposes. 
+			Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. 
+			Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. 
+			Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. </p>
+		</div>
+		<h3>The Jquery UI Demo Page</h3>
+		<div>
+			<p>Demo text for demo purposes. 
+			Demo text for demo purposes. 
+			Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. 
+			Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. 
+			Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. </p>
+		</div>
+		<h3>The Jquery UI Demo Page</h3>
+		<div>
+			<p>Demo text for demo purposes. 
+			Demo text for demo purposes. 
+			Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. 
+			Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. 
+			Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. </p>
+		</div>
+		<h3>The Jquery UI Demo Page</h3>
+		<div>
+			<p>Demo text for demo purposes. 
+			Demo text for demo purposes. 
+			Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. 
+			Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. 
+			Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. </p>
+		</div>
+		<h3>The Jquery UI Demo Page</h3>
+		<div>
+			<p>Demo text for demo purposes. 
+			Demo text for demo purposes. 
+			Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. 
+			Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. 
+			Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. Demo text for demo purposes. </p>
+		</div>
+	</div>
+	<ul>
+		<li>Feijoada</li>
+		<li>Pão de Queijo</li>
+		<li>Calabresa</li>
+		<li>Bacalhau</li>
+		<li>Arroz com Feijão</li>
+		
+	</ul>
+	<div id="draggable">Drag me around</div>
+	<div id="resizable">Resize me</div>
+	<div id="target"></div>
+	<script>
+		$("#accordion").accordion();
+		$("ul").sortable();
+		$("#draggable").draggable();
+		$("#resizable").resizable();
+		$("#target").droppable({
+			drop: function(ui, event) {
+				$("#target").css("background-color","red");
+			}
+		});
+	</script>
+	
+</body>
+</html>
